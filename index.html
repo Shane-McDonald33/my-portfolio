@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane McDonald</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpg">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Intro-->
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, I'm <strong>Shane McDonald</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Full-Stack Developer</p>
+        <img src="assets/headshot1.jpg" alt="" class="intro__img">
+    </section>
+
+    <!--About Me -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I Do</h2>
+        <div class="services">
+            <div class="service">
+            <h3>Design + Development</h3>
+            <p>Designs by Shane always feature crisp, pleasing aesthetics as well as seamless development.
+                If it was designed by me, it was created with passion, purpose, and UX centered full-stack engineering.
+            </p>
+            <img src="assets/fullstack.png" alt="" class="service__img">
+            </div> <!-- services part -->
+
+            <div class="service">
+                <h3>Front-End Development</h3>
+                <p>I have spent my time dedicating myself to Javascript and React and 3rd party design libraries
+                     in order to deliver top quality front-end user experiences. 
+                </p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" class="service__img">
+                <img src="assets/react and materialui.png" alt="" class="service__img">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" class="service__img" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="" class="service__img" />
+            </div> <!-- contact me part -->
+
+            <div class="service">
+                <h3>Back-End Development</h3>
+                <p>Being behind the scenes to provide the user with the best experience possible is what
+                    makes the tech world go round. I have made myself confident in my abilites to 
+                    bring quality server-side performance on all of my projects.
+                </p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" class="service__img">
+                
+            </div> <!-- past projects part -->
+
+            <div class="service">
+                <h3>Database Service</h3>
+                <p>Data is the driving force of success in the tech world, so I have devoted time and 
+                    effort into familiarizing myself with the database services to ensure that the information
+                    is always being used to its greatest potential.</p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" class="service__img">
+                <img src="assets/postman.png" class="service__img">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" class="service__img">
+            </div> <!-- about me part -->
+
+        </div>
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!--about me-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about">Software Engineer Based Out Of Houston</p>
+        <div class="about-me__body">
+            <p>I am a full-stack developer located in Houston Texas. After earning my degree from university, I embarked on several career paths before finding my 
+                passion for software-engineering. During the transition, I have learned project management, team collaboration, skill organization, and a near 
+                mad desire for deadline completion. Software-engineering best suites my skills as an contributing member of soceity and I am eager to begin my most 
+                important and final career path as a full-stack developer. 
+            </p>
+        </div>
+        <img src="assets/headshot2.jpg" class="about-me__img">
+    </section>
+
+    <!--my work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Apps</h2>
+        <p class="section__subtitle section__subtitle--work">A Seletion Of My Work</p>
+        <div class="portfolio">
+            <div class="portfolioItem">
+                <h3>E-Commerece Shopping Cart</h3>
+                <p>
+                   An E-Commerece application that allows the user to choose from a small list of items and add them to the dynamic shopping cart. The user may then interact
+                   the items placed in the cart and adjust their quantities. The items, once selected for purchased, are then sent to a Firebase backend server. 
+                   The application was built using React Redux and styled with HTML and Module.CSS.  
+                </p>
+                <p>***Please Note: The Error message you see at the top of the app is due to Firebase changing their security credentials as of 03/22/2022, so the error persists,
+                     however, the code is sound.***
+                </p>
+                <div class="projectPicture">
+                <img src="assets/e-comm.png" class="portfolioImage" alt=""/>
+                </div>
+            <a href="https://add-items-to-cart.herokuapp.com//" class="portfolioLink" target="blank">E-Commerece Shopping Cart</a>
+            <a href="https://github.com/Shane-McDonald33/2-redux-practice.git" class="portfolioLink" target="blank">Github Source Code</a>
+            <a href="assets/React App - Google Chrome 2022-04-12 21-52-46.mp4" class="portfolioLink" target="_blank">Demo
+            </a>
+            </div>
+            <div class="portfolioItem">
+                <h3>Expense Tracker</h3>
+                <p>
+                    An application that allows a user to add expenses to a dynamic chart that will graph and track the quantity and 
+                    timestamp of added expenses by year and amount. The visual graph displays to the user the frequency of expenses per month.
+                    The app was built with React.js and focused on the fundamentals of React. 
+                </p>
+                <div class="projectPicture">
+                <img src="assets/graph.png" alt="" class="portfolioImage-1" />
+                </div>
+            <a href="https://expenses-graphing.herokuapp.com/" class="portfolioLink" target="_blank">Expense Tracker</a>
+            <a href="https://github.com/Shane-McDonald33/expense-tracker.git" class="portfolioLink" target="_blank">Github Source Code</a>
+            <a href="assets/Expense Tracker - Google Chrome 2022-04-12 22-01-38.mp4" class="portfolioLink" target="_blank">Demo</a>
+            </div>
+            <div class="portfolioItem">
+                <h3>Food Menu App</h3>
+                <p>
+                    An application that allows a user to browse a menu of food items and select them to be added to the checkout cart. 
+                    Once in the cart, the items' quantities can be manipulated to the user's command. 
+                    The app was built using ContextAPI in React and React Hooks. 
+                </p>
+                <div class="projectPicture">
+                <img src="assets/foodimages.jpg" alt="" class="portfolioImage-2"/>
+                </div>
+            <a href="https://order-some-food.herokuapp.com/" class="portfolioLink" target="_blank">Food Menu Applicaiton</a>
+            <a href="https://github.com/Shane-McDonald33/order-food.git" class="portfolioLink" target="_blank">Github Source Code></a>
+            <a href="/assets/Welcome To My Kitchen - Google Chrome 2022-04-12 22-17-57.mp4" class="portfolioLink" target="_blank">Demo</a>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+        <a href="mailto:mcdonaldshane33@gmail.com" class="footer__link">mcdonaldshane33@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Shane-McDonald33" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="www.linkedin.com/in/i-am-shane" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="assets/SE Resume.pdf" class="social-list__link" target="_blank">My Resume</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/196af85250.js" crossorigin="anonymous"></script>
+</body>
+</html>
